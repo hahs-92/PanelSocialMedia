@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+//COMPONENTS
+import CardMain from './components/CardMain'
+import CardInfo from './components/CardInfo'
+
 import './App.css';
+//ESTILOS GLOBALES
+import './styles/Global.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <section>
+            <h3>Social Media Dashboard</h3>
+            <h5>Total Followers: 23,004</h5>
+        </section>
+
+        <section>
+            <div>
+                <h5>Dark Mode</h5>
+            </div>
+
+            <div>
+              Button Dark
+            </div>
+        </section>
+
       </header>
-    </div>
-  );
+
+      <section>
+        <CardMain />
+      </section>
+
+      <section>
+        <CardInfo />
+      </section>
+    </>
+  )
 }
 
 export default App;
