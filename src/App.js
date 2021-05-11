@@ -2,39 +2,58 @@
 import CardMain from './components/CardMain'
 import CardInfo from './components/CardInfo'
 
-import './App.css';
 //ESTILOS GLOBALES
 import './styles/Global.css'
+//ESTILOS
+import styles from './styles/App.module.css'
+
+// __________________________________________________________________________________
 
 function App() {
   return (
-    <>
-      <header>
-        <section>
-            <h3>Social Media Dashboard</h3>
-            <h5>Total Followers: 23,004</h5>
-        </section>
+    <section className={ styles.App }>
+      <header className= { styles.Header }>
 
-        <section>
-            <div>
-                <h5>Dark Mode</h5>
-            </div>
+        <div className={ styles.HeaderContainer }>
+          <section className={ styles.HeaderInfo }>
+              <h2>Social Media Dashboard</h2>
+              <h3>Total Followers: 23,004</h3> 
+          </section>
 
-            <div>
-              Button Dark
-            </div>
-        </section>
+          <section className={ styles.HeaderTheme }>
+              <div>
+                  <h3>Dark Mode</h3>
+              </div>
 
+              <div>
+                Button Dark
+              </div>
+          </section>
+        </div>
       </header>
 
-      <section>
+      <section className={ styles.SectionMain }>
+        <CardMain />
+        <CardMain />
+        <CardMain />
         <CardMain />
       </section>
 
-      <section>
+      <section className={ styles.SubTitle }>
+        <h2>Overview- Today</h2>
+      </section>
+
+      <section className={ styles.SectionInfo }>
+        <CardInfo />
+        <CardInfo />
+        <CardInfo />
+        <CardInfo />
+        <CardInfo />
+        <CardInfo />
+        <CardInfo />
         <CardInfo />
       </section>
-    </>
+    </section>
   )
 }
 

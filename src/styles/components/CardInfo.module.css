@@ -1,0 +1,39 @@
+.CardInfo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    background-color: salmon;
+}
+
+.Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.Title {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.Number {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.Percentage {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
