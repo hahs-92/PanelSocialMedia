@@ -1,29 +1,49 @@
+import { useContext } from 'react'
+
+//COMPONENTS
+import IconFacebook from './IconFacebook'
+import IconYoutube from './IconYoutube'
+import IconTwitter from './IconTwitter'
+import IconInstagram from './IconInstagram'
+import IconUp from './IconUp'
+import IconDown from './IconDown'
+
+//CONTEXT
+import AppContext from '../context/AppContext'
+
 //ESTILOS
 import styles from '../styles/components/CardMain.module.css'
 
-const CardMain = () => {
+const CardMain = (props) => { 
+    const { darkMode } = useContext(AppContext)
     return(
-        <article className={ styles.Wrapper }>
-            {/* <section className={ styles.Bar }>
-            
-            </section> */}
+        <article className={ darkMode ? `${ styles.Wrapper } ${ styles.WrapperDarkMode }` : styles.Wrapper }>
+            <section className={ `${ styles.Bar } ${ styles[`Bar${ props.icon }`]}`} ></section>
 
             <section className={ styles.User }>
-                <div>
-                    Logo
-                </div>
-                <h4>@nathanf</h4>
+                { props.icon === 'Facebook' && <IconFacebook /> }
+                { props.icon === 'Youtube'  && <IconYoutube /> }
+                { props.icon === 'Twitter'  && <IconTwitter />}
+                { props.icon === 'Instagram'  && <IconInstagram />}
+
+                <h4>{ props.user }</h4>
             </section>
             
             <section className={ styles.Followers }>
-                <h1>1987</h1>
-                <h3>Followers</h3>
+                <h1>{ props.amountFollowers } </h1>
+                <h3>{ props.title }</h3>
             </section>
 
-            <section className={ styles.Rate }>
-                <div>
-                    <div>Logo</div>
-                    <h4>12</h4>
+            <section className={ `${ styles.Rate } ${ styles[`${ props.changeFollowers }`]}` }>
+                <div className={ styles.Data }>
+                    <div>
+                        {
+                            props.changeFollowers === 'Up'
+                                ? <IconUp />
+                                : <IconDown />
+                        }
+                    </div>
+                    <h4>{ props.number  }</h4>
                 </div>
                 <div>
                     <h4>Today</h4>

@@ -3,7 +3,13 @@
     justify-content: center;
     width: 100%;
     height: 120px;
-    background-color: salmon;
+    border-radius: 5px;
+    background-color: var(--color-lightGrayish-blue-Card-BG);
+    transition:  all .3s ease-in-out;
+}
+
+.CardInfoDarkMode {
+    background-color: var(--color-darkBlue-desaturated);
 }
 
 .Wrapper {
@@ -36,4 +42,21 @@
     align-items: center;
     justify-content: flex-end;
     width: 50%;
+}
+
+.CardInfo h2 {
+    font-size: 2.8rem;
+}
+
+.CardInfo .Up h4 {
+    color: var(--color-green)
+}
+
+.CardInfo .Down h4 {
+    color: var(--color-youtube);
+}
+
+.PercentageLogo {
+    display: flex;
+    padding-right: 2px;
 }

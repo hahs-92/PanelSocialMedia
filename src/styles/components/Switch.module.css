@@ -1,0 +1,37 @@
+.Switch {
+    position: relative;
+    display: flex;
+    margin-left: 5px;
+    padding: 2px;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    border: none;
+    background: var(--color-light);
+    outline: none;
+    cursor: pointer;
+    animation: switch .3s;
+}
+
+.Switch::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    margin-right: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-lightGrayish-blue-Card-BG);
+    border-radius: 50%;
+    transition:  all .3s ease-in-out;
+}
+
+.active {
+    background: linear-gradient(to right, var(--color1), var(--color2));
+}
+
+.active::after {
+    transform: translateX(-20px);
+    background: var(--color-darkBlue);
+}
+
+

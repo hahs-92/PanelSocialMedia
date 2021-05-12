@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 * {
     --color-facebook: hsl(208, 92%, 53%);
     --color-youtube: hsl(348, 97%, 39%);
     --color-twitter: hsl(203, 89%, 53%);
     --color-instagram:  hsl(37, 97%, 70%);
     --color-instagram2: hsl(329, 70%, 58%);
+    --color-green: hsl(146, 54%, 32%);
 
     /* Dark Theme */
 
-    --color: hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    --color1: hsl(210, 78%, 56%);
+    --color2: hsl(146, 68%, 55%);
 
     /* Light Theme */
 
@@ -31,33 +35,33 @@
     --color-darkGrayish-blue-Text: hsl(228, 12%, 44%);
     --color-darkBlue-Text: hsl(230, 17%, 14%);
 
-    /* ### Font
+    /* font */
+    --font-family: 'Inter', sans-serif;
 
-- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 700 */
 }
 
 html {
     box-sizing: border-box;
+    font-family: var(--font-family);
     font-size: 62.5%;
-}
-
-body {
-    /* background: linear-gradient(to right,var(--color-instagram), var(--color-instagram2)); */
 }
 
 h1 {
     font-size: 4.8rem;
+    font-weight: 700;
 }
 
 h2 {
     font-size: 2.4rem;
+    font-weight: 700;
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 h4 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
