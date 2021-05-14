@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 
 //COMPONENTS
@@ -59,7 +60,7 @@ function App() {
                     amountFollowers={ item.amountFollowers } 
                     title={ item.title } 
                     number={ item.number } 
-                    changeFollowers={ item.changeFollowers }
+                    trend={ item.trend }
                   />
                 ))
               }
@@ -103,7 +104,7 @@ function App() {
               <section className={ styles.SectionMain }>
                 {
                   infoUser.map(item => (           
-                    <CardMain key={ item.id } title={ item.title } user={ item.user } icon={ item.icon } amountFollowers={ item.amountFollowers } number={ item.number } changeFollowers={ item.changeFollowers }/>
+                    <CardMain key={ item.id } title={ item.title } user={ item.user } icon={ item.icon } amountFollowers={ item.amountFollowers } number={ item.number } trend={ item.trend }/>
                   ))
                 }
               </section>

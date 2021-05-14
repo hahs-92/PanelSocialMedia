@@ -6,7 +6,7 @@ const info = [
         amountFollowers: '1987',
         title:'FOLLOWERS',
         number: 12,
-        changeFollowers: 'Up'
+        trend: 'Up'
     },
     {
         id: '2',
@@ -15,7 +15,7 @@ const info = [
         amountFollowers: '1024',
         title:'FOLLOWERS',
         number: 99,
-        changeFollowers: 'Up'
+        trend: 'Up'
     },
     {
         id: '3',
@@ -24,7 +24,7 @@ const info = [
         amountFollowers: '11k',
         title:'FOLLOWERS',
         number: 1099,
-        changeFollowers: 'Up'
+        trend: 'Up'
     },
     {
         id: '4',
@@ -33,7 +33,7 @@ const info = [
         amountFollowers: '8239',
         title:'SUBSCRIBERS',
         number: 144,
-        changeFollowers: 'Down'
+        trend: 'Down'
     }
     
 ]

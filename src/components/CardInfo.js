@@ -1,3 +1,4 @@
+import React from 'react'
 import { useContext } from 'react'
 
 //COMPONENTS
@@ -20,7 +21,7 @@ const CardInfo = (props) => {
         <article className={ darkMode ? `${ styles.CardInfo } ${ styles.CardInfoDarkMode }` : styles.CardInfo }>
             <div className={ styles.Wrapper }>
                 <section className={ styles.Title }>
-                    <h3>{ props.title }</h3>
+                    <h3>{ props.title } </h3>
                 </section>  
 
                 <section className={ styles.Logo }>
@@ -33,8 +34,8 @@ const CardInfo = (props) => {
                 </section>
 
                 <section className={ styles.Number }>
-                <div>
-                    <h2>{ props.amount }</h2>
+                    <div>
+                        <h2>{ props.amount }</h2>
                     </div>
                 </section>
 

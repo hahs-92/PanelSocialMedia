@@ -1,3 +1,4 @@
+import React from 'react'
 import { useContext } from 'react'
 
 //COMPONENTS
@@ -34,11 +35,11 @@ const CardMain = (props) => {
                 <h3>{ props.title }</h3>
             </section>
 
-            <section className={ `${ styles.Rate } ${ styles[`${ props.changeFollowers }`]}` }>
+            <section className={ `${ styles.Rate } ${ styles[`${ props.trend }`]}` }>
                 <div className={ styles.Data }>
                     <div>
                         {
-                            props.changeFollowers === 'Up'
+                            props.trend === 'Up'
                                 ? <IconUp />
                                 : <IconDown />
                         }
